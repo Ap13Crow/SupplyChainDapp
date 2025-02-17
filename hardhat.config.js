@@ -23,14 +23,8 @@ const PRIVATE_KEY =process.env.PRIVATE_KEY;
 
 
 module.exports = {
-  solidity: "0.8.0",
-  paths: {
-    artifacts: "./client/src/artifacts",
-  },
+  solidity: "0.8.19",
   networks: {
-    ropsten: {
-      url: `https://eth-ropsten.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
-      accounts: [`${PRIVATE_KEY}`]
-    },
-  }
-}
+    hardhat: {}, // Local development blockchain
+  },
+};
